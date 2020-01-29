@@ -591,6 +591,58 @@ footer {
   }
 }
 
+li {
+  list-style-type: none;
+}
+
+span.count {
+  margin: 3px 3px 3px 0;
+  padding: .5px 4px;
+  color: #343a40;
+  background-color: #e9ecef;
+  border-radius: 3px;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
+
+
+.hero-bkg-animated {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 400px;
+  padding-top: 120px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+  
+  mix-blend-mode: difference;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.hero-bkg-animated h1 {
+  font-family: sans-serif;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  padding: 20px;
+  margin: 20px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.posts{
+  padding-top: 100px
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}

@@ -15,6 +15,13 @@ description: Full stack developer
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/46483172?s=460&v=4
 
+##categories
+categories:
+  - name: blog
+    url: blog
+  - name: test
+
+  
 
 # Tabs in header. There are 'Blog', 'About', 'Archive', 'Tags'
 # and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
@@ -22,6 +29,8 @@ avatar: https://avatars1.githubusercontent.com/u/46483172?s=460&v=4
 navigation:
   - name: Blog
     url: /
+  - name: Category
+    url: /category
   - name: About
     url: /about
   - name: Archive
@@ -79,6 +88,7 @@ paginate_path: /page:num/
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
+
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:

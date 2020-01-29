@@ -1,0 +1,29 @@
+---
+layout : default
+title: category
+permalink: /category/
+---
+
+{% if site.posts.size == 0 %}
+    <h2>no post found</h2>
+{% endif %}
+
+<did>
+    <h1>카테고리들</h1>
+    {% for category in site.categories%}
+        <ul class="categories">
+            {% for categoryName in category[0] %}
+               {% if categoryName != null %}
+               <a href="/category/{{categoryName}}">
+                <div class="card">
+                    
+                    <span>{{categoryName}}</span>
+                <span class="count">{{category[1].size}}</span>
+                </div>
+                <a href="/category/{{categoryName}}"></a>
+               {% endif%}
+            {%endfor%}
+        </ul>
+ 
+    {% endfor%}
+</did>
