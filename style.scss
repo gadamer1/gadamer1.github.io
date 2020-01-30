@@ -618,9 +618,10 @@ span.count {
   -webkit-animation: slide 20s linear infinite;
   
   mix-blend-mode: difference;
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-attachment: fixed;
-  background-position: center;
+  // background-position: center;
 }
 
 .hero-bkg-animated h1 {
